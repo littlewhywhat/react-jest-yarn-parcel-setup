@@ -3,7 +3,7 @@
 #### Build and run server
 
 ```
-sudo yarn install
+yarn
 yarn test
 yarn start
 ```
