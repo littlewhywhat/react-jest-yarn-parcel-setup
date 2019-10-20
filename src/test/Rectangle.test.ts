@@ -1,4 +1,4 @@
-import Rectangle from '../main/components/Rectangle';
+import { Rectangle } from '../main/components/Rectangle';
 
 describe('Rectangle 10 by 10', () => {
 
