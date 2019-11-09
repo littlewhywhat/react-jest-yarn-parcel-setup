@@ -1,0 +1,5 @@
+{
+  "browsers": "chrome",
+  "src": ["features", "!features/support/e2e.ts"],
+  "appCommand": "ts-node features/support/e2e.ts"
+}

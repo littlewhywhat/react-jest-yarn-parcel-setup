@@ -7,3 +7,9 @@ yarn
 yarn test
 yarn start
 ```
+
+#### Run e2e
+
+```
+yarn e2e
+```

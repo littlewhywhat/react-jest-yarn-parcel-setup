@@ -1,7 +1,6 @@
-import * as React from 'react'
-import ReactDom from "react-dom"
-import { Rectangle } from "./components/Rectangle"
-import App from './components/App';
+import * as React from "react";
+import ReactDom from "react-dom";
+import App from "./components/App";
+import { Rectangle } from "./components/Rectangle";
 
-ReactDom.render(<App />, document.getElementById('app'));
-console.log("Area of rectangle is: " + new Rectangle(10,10).area);
+ReactDom.render(<App />, document.getElementById("app"));
