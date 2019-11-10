@@ -4,8 +4,9 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "parcel src/index.html",
-    "test": "jest"
+    "start": "./node_modules/.bin/parcel src/index.html",
+    "test": "jest",
+    "e2e": "./node_modules/.bin/gherkin-testcafe"
   },
   "devDependencies": {
     "@babel/core": "*",
@@ -17,19 +18,43 @@
     "@types/node": "^12.11.1",
     "@types/react": "^16.9.9",
     "babel-jest": "*",
+    "cucumber": "^5.1.0",
+    "cucumber-expressions": "^8.1.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
+    "gherkin-testcafe": "^2.4.1",
+    "husky": "^3.0.9",
     "jest": "*",
     "jest-cli": "*",
     "parcel-bundler": "^1.9.2",
+    "precise-commits": "^1.0.2",
+    "prettier": "^1.19.1",
+    "testcafe": "^1.6.1",
     "ts-jest": "^24.1.0",
+    "ts-node": "^8.4.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
     "typescript": "^3.6.4"
   },
   "dependencies": {
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": [
+    "yarn",
+    "parcel",
+    "react",
+    "jest",
+    "testcafe",
+    "cucumber",
+    "typescript"
+  ],
+  "author": "littlewhywhat@gmail.com",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "precise-commits"
+    }
+  }
 }
