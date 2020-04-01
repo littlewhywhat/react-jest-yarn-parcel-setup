@@ -22,16 +22,16 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: install
-      uses: CultureHQ/actions-yarn@master
+      uses: Borales/actions-yarn@v2.1.0
       with:
-        args: install
+        cmd: install
     - name: Run unit tests
-      uses: CultureHQ/actions-yarn@master
+      uses: Borales/actions-yarn@v2.1.0
       with:
-        args: test --coverage
+        cmd: test --coverage
 
     # Runs a set of commands using the runners shell
     - name: Run e2e tests
-      uses: CultureHQ/actions-yarn@master
+      uses: Borales/actions-yarn@v2.1.0
       with:
-        args: e2e
+        cmd: e2e
